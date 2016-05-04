@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Menu
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Menu
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/Menu.html",
         "dojo/dom-construct"], 
         function(declare, BaseMdlWidget, template, domConstruct) {
@@ -43,7 +43,7 @@ define(["dojo/_base/declare",
        *
        * @instance
        */
-      postCreate: function alfresco_experimental_mdl_Menu__postCreate() {
+      postCreate: function mdl_Menu__postCreate() {
          var menuNode = domConstruct.create("ul", {
             className: "mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect",
             "for": this.id

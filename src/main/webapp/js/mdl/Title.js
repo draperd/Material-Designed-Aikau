@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Title
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Title
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/Title.html"], 
         function(declare, BaseMdlWidget, template) {
    
@@ -50,7 +50,7 @@ define(["dojo/_base/declare",
        * 
        * @instance
        */
-      postMixInProperties: function alfresco_experimental_mdl_Title__postMixinProperties() {
+      postMixInProperties: function mdl_Title__postMixinProperties() {
          this.inherited(arguments);
          this.title = this.message(this.title);
       }

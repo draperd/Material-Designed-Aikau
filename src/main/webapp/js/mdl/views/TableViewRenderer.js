@@ -19,7 +19,7 @@
 
 /**
  * 
- * @module alfresco/experimental/mdl/views/TableViewRenderer
+ * @module mdl/views/TableViewRenderer
  * @extends module:alfresco/lists/views/ListRenderer
  * @author Dave Draper
  */
@@ -54,7 +54,7 @@ define(["dojo/_base/declare",
        * 
        * @instance
        */
-      renderData: function alfresco_experimental_mdl_views_TableViewRenderer__renderData() {
+      renderData: function mdl_views_TableViewRenderer__renderData() {
          array.forEach(this.items, function(item) {
             var row = domConstruct.create("tr", {
                "class": "alfresco-experimental-mdl-views-TableView__renderer__item"
@@ -73,7 +73,7 @@ define(["dojo/_base/declare",
          componentHandler.upgradeElement(this.domNode);
       },
 
-      onViewShown: function alfresco_experimental_mdl_views_TableViewRenderer__onViewShown() {
+      onViewShown: function mdl_views_TableViewRenderer__onViewShown() {
          this.inherited(arguments);
 
          /* global componentHandler */

@@ -39,38 +39,38 @@ model.jsonModel = {
    widgets: [
       // NOTE: Provided as an example only, the tutorial files are not in the source, they can be re-added
       {
-         name: "alfresco/experimental/mdl/Layout",
+         name: "mdl/Layout",
          config: {
             widgets: [
                {
-                  name: "alfresco/experimental/mdl/Header",
+                  name: "mdl/Header",
                   config: {
                      widgets: [
                         {
-                           name: "alfresco/experimental/mdl/HeaderRow",
+                           name: "mdl/HeaderRow",
                            config: {
                               widgets: [
                                  {
-                                    name: "alfresco/experimental/mdl/Title",
+                                    name: "mdl/Title",
                                     config: {
                                        title: "Material Designed Aikau"
                                     }
                                  },
                                  {
-                                    name: "alfresco/experimental/mdl/Spacer"
+                                    name: "mdl/Spacer"
                                  },
                                  {
-                                    name: "alfresco/experimental/mdl/Menu",
+                                    name: "mdl/Menu",
                                     config: {
                                        widgets: [
                                           {
-                                             name: "alfresco/experimental/mdl/MenuItem",
+                                             name: "mdl/MenuItem",
                                              config: {
                                                 title: "Help"
                                              }
                                           },
                                           {
-                                             name: "alfresco/experimental/mdl/MenuItem",
+                                             name: "mdl/MenuItem",
                                              config: {
                                                 title: "Logout",
                                                 publishTopic: "ALF_DOLOGOUT"
@@ -83,17 +83,17 @@ model.jsonModel = {
                            }
                         },
                         // {
-                        //    name: "alfresco/experimental/mdl/TabBar"
+                        //    name: "mdl/TabBar"
                         // }
                         // {
-                        //    name: "alfresco/experimental/mdl/HeaderRow",
+                        //    name: "mdl/HeaderRow",
                         //    config: {
                         //       widgets: [
                         //          {
-                        //             name: "alfresco/experimental/mdl/Spacer"
+                        //             name: "mdl/Spacer"
                         //          },
                         //          {
-                        //             name: "alfresco/experimental/mdl/Navigation"
+                        //             name: "mdl/Navigation"
                         //          }
                         //       ]
                         //    }
@@ -103,11 +103,11 @@ model.jsonModel = {
                   }
                },
                {
-                  name: "alfresco/experimental/mdl/Drawer",
+                  name: "mdl/Drawer",
                   config: {
                      widgets: [
                         // {
-                        //    name: "alfresco/experimental/mdl/Title",
+                        //    name: "mdl/Title",
                         //    config: {
                         //       title: "Options"
                         //    }
@@ -118,13 +118,13 @@ model.jsonModel = {
                         getDocLibCategories(options)
                         // ,
                         // {
-                        //    name: "alfresco/experimental/mdl/Navigation"
+                        //    name: "mdl/Navigation"
                         // }
                      ]
                   }
                },
                {
-                  name: "alfresco/experimental/mdl/Content",
+                  name: "mdl/Content",
                   config: {
                      contentAsTabs: false,
                      widgets: [
@@ -139,14 +139,14 @@ model.jsonModel = {
                         //    }
                         // },
                         // {
-                        //    name: "alfresco/experimental/mdl/FabButton",
+                        //    name: "mdl/FabButton",
                         //    config: {
                         //       icon: "skip_previous",
                         //       publishTopic: "ALF_PAGE_BACK"
                         //    }
                         // },
                         // {
-                        //    name: "alfresco/experimental/mdl/FabButton",
+                        //    name: "mdl/FabButton",
                         //    config: {
                         //       icon: "skip_next",
                         //       publishTopic: "ALF_PAGE_FORWARD"

@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Button
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Button
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/FabButton.html",
         "dijit/_OnDijitClickMixin",
         "alfresco/renderers/_PublishPayloadMixin"], 
@@ -54,7 +54,7 @@ define(["dojo/_base/declare",
        * @instance
        * @param  {object} evt The click event
        */
-      onClick: function alfresco_experimental_mdl_FabButton__onClick(evt) {
+      onClick: function mdl_FabButton__onClick(evt) {
          this.publishPayload = this.getGeneratedPayload();
          this.alfPublish(this.publishTopic, this.publishPayload, !!this.publishGlobal, !!this.publishToParent);
          evt.stopPropagation();

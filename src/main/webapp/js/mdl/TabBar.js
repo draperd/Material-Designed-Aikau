@@ -21,13 +21,13 @@
  *  NOTE: It looks like dynamic tab creation isn't supported yet: https://github.com/google/material-design-lite/issues/1175
  *
  * 
- * @module alfresco/experimental/mdl/TabBar
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/TabBar
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/TabBar.html",
         "dojo/_base/lang",
         "dojo/dom-construct"], 
@@ -47,7 +47,7 @@ define(["dojo/_base/declare",
        *
        * @instance
        */
-      postCreate: function alfresco_experimental_mdl_TabBar__postCreate(){
+      postCreate: function mdl_TabBar__postCreate(){
          // Doesn't create children - tabs added via subscription
          
          this.alfSubscribe("MDL_ADD_TAB", lang.hitch(this, function(payload) {

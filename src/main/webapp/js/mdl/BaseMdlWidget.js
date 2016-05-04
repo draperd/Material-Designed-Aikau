@@ -20,7 +20,7 @@
 /**
  * 
  *
- * @module alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/BaseMdlWidget
  * @extends external:dijit/_WidgetBase
  * @mixes external:dojo/_TemplatedMixin
  * @author Dave Draper
@@ -64,7 +64,7 @@ define(["dojo/_base/declare",
        *
        * @instance
        */
-      postCreate: function alfresco_experimental_mdl_BaseMdlWidget__postCreate(){
+      postCreate: function mdl_BaseMdlWidget__postCreate(){
          if (this.widgets)
          {
             this.processWidgets(this.widgets, this.domNode);
@@ -77,7 +77,7 @@ define(["dojo/_base/declare",
        * @instance
        * @param  {object[]} widgets [description]
        */
-      allWidgetsProcessed: function alfresco_experimental_mdl_BaseMdlWidget__allWidgetsProcessed(widgets) {
+      allWidgetsProcessed: function mdl_BaseMdlWidget__allWidgetsProcessed(widgets) {
          if (widgets)
          {
             array.forEach(widgets, function(widget) {

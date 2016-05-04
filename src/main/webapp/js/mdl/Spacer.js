@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Spacer
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Spacer
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget"], 
+        "mdl/BaseMdlWidget"], 
         function(declare, BaseMdlWidget) {
    
    return declare([BaseMdlWidget], {

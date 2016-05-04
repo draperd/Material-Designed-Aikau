@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Navigation
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Navigation
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/Navigation.html"], 
         function(declare, BaseMdlWidget, template) {
    

@@ -19,14 +19,14 @@
 
 /**
  * 
- * @module alfresco/experimental/mdl/views/TableView
+ * @module mdl/views/TableView
  * @extends module:alfresco/lists/views/AlfListView
  * @author Dave Draper
  */
 define(["dojo/_base/declare",
         "alfresco/lists/views/AlfListView",
         "dojo/text!./templates/TableView.html",
-        "alfresco/experimental/mdl/views/TableViewRenderer"], 
+        "mdl/views/TableViewRenderer"], 
         function(declare, AlfListView, template, TableViewRenderer) {
 
    return declare([AlfListView], {
@@ -45,7 +45,7 @@ define(["dojo/_base/declare",
        * @instance
        * @returns {object} A new [HtmlListViewRenderer]{@link module:alfresco/lists/views/HtmlListViewRenderer}
        */
-      createListRenderer: function alfresco_experimental_mdl_views_TableView__createListRenderer() {
+      createListRenderer: function mdl_views_TableView__createListRenderer() {
          var dlr = new TableViewRenderer({
             items: this.currentData.items
          });

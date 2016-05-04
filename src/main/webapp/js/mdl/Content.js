@@ -18,13 +18,13 @@
  */
 
 /**
- * @module alfresco/experimental/mdl/Content
- * @extends module:alfresco/experimental/mdl/BaseMdlWidget
+ * @module mdl/Content
+ * @extends module:mdl/BaseMdlWidget
  * @author Dave Draper
  * @since 1.0.67
  */
 define(["dojo/_base/declare",
-        "alfresco/experimental/mdl/BaseMdlWidget", 
+        "mdl/BaseMdlWidget", 
         "dojo/text!./templates/Content.html",
         "dojo/_base/array",
         "dojo/dom-construct",
@@ -59,7 +59,7 @@ define(["dojo/_base/declare",
        * @param {element} rootNode The DOM node to create the new DOM node as a child of
        * @param {string} rootClassName A string containing one or more space separated CSS classes to set on the DOM node
        */
-      createWidgetDomNode: function alfresco_experimental_mdl_Content__createWidgetDomNode(widget, rootNode) {
+      createWidgetDomNode: function mdl_Content__createWidgetDomNode(widget, rootNode) {
          if (!this.contentAsTabs)
          {
             return this.inherited(arguments);
@@ -82,7 +82,7 @@ define(["dojo/_base/declare",
        *
        * @instance
        */
-      postCreate: function alfresco_experimental_mdl_Content__postCreate() {
+      postCreate: function mdl_Content__postCreate() {
          var targetNode = this.domNode;
          if (!this.contentAsTabs)
          {
@@ -103,7 +103,7 @@ define(["dojo/_base/declare",
        * @instance
        * @param  {object[]} widgets [description]
        */
-      allWidgetsProcessed: function alfresco_experimental_mdl_Content__allWidgetsProcessed(widgets) {
+      allWidgetsProcessed: function mdl_Content__allWidgetsProcessed(widgets) {
          if (widgets)
          {
             array.forEach(widgets, function(widget, index) {
