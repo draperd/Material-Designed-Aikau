@@ -58,6 +58,7 @@ define(["dojo/_base/declare",
          this.alfSubscribe(this.hashChangeTopic, lang.hitch(this, this.onFilterChange));
          this.alfSubscribe(this.userAccessChangeTopic, lang.hitch(this, this.onUserAcess));
          this.alfSubscribe(this.metadataChangeTopic, lang.hitch(this, this.onCurrentNodeChange));
+         this.filterTopic && this.alfSubscribe(this.filterTopic, lang.hitch(this, this.filter));
          // this.inherited(arguments);
       },
    

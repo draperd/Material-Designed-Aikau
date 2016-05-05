@@ -1,7 +1,7 @@
 <import resource="classpath:alfresco/site-webscripts/org/alfresco/aikau/{aikauVersion}/libs/doclib/doclib.lib.js">
 
 var options = {
-   useHash: false,
+   useHash: true,
    siteId: "swsdp", 
    containerId: "documentlibrary", 
    rootNode: null, 
